@@ -1,0 +1,89 @@
+@font-face {
+  font-family: airbnbcereal;
+  src: url(../../public/fonts/airbnbcereal.otf);
+}
+
+/* Main Page Style */
+.nav-item {
+  font-family: "airbnbcereal";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 10vh;
+  color: #2E266F;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.text-primary {
+  color: #2e266f !important;
+}
+
+.hide-desktop {
+  display: none;
+  visibility: hidden;
+}
+
+/* Popular Recipes Style */
+.popular-recipe-image {
+  width: 100%;
+  background-color: gray;
+  border-radius: 10px;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  height: 200px;
+}
+
+.menu-recipes {
+  width: 100%;
+}
+
+footer {
+  margin-top: 300px;
+  height: 350px;
+  background-color: #efc81a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-copyright {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 575px) {
+  .nav {
+    display: none;
+    visibility: hidden;
+  }
+
+  .nav-item {
+    margin: 0;
+  }
+
+  #content {
+    margin-top: 50px;
+  }
+
+  .hide-desktop {
+    display: block;
+    visibility: visible;
+  }
+}
+
+@media (min-width: 768px) {
+  .popular-recipe-image {
+    height: 250px; 
+  }
+}

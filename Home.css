@@ -1,0 +1,237 @@
+@font-face {
+    font-family: airbnbcereal;
+    src: url(../../public/fonts/airbnbcereal.otf);
+}
+
+/* Navbar Style */
+.nav-item {
+    font-family: "airbnbcereal";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 10vh;
+    color: #2E266F;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+/* Hero style */
+.bg-yellow {
+    background-color: #efc81a;
+    height: 100vh;
+    width: 25%;
+    max-width:100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.hero img {
+    position: absolute;
+    right: 17vh;
+    top: 20vh;
+    width: 30%;
+    height: auto;
+    max-width:100%;
+}
+
+.hero-text {
+    font-family: 'airbnbcereal';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 90px;
+    align-items: center;
+    color: #2E266F;
+    max-width:100vh;
+}
+
+/* Main Section Style */
+.main-section-recipe {
+    position: relative;
+    margin-bottom: 20vh;
+}
+
+.main-section-recipe h3 {
+    position: relative;
+    bottom: 5vh;
+    font-family: 'airbnbcereal';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 62px;
+    color: #3F3A3A;
+    border-left: 10px solid #EFC81A;
+    padding-left: 5%;
+}
+
+.main-section-recipe img {
+    position: relative;
+    bottom: 90%;
+    height: auto;
+    width: 80%;
+    max-width:100%;
+}
+
+.main-section-recipe h4 {
+    font-family: 'airbnbcereal';
+    font-style: normal;
+    font-weight: 550;
+    line-height: 73px;
+    color: #3F3A3A;
+}
+
+.main-section-recipe button {
+    margin-top: 10px;
+    padding: 10px 30px;
+    background: #EFC81A;
+    border-radius: 8px;
+    color: white;
+}
+
+.new-recipe-box {
+    position: absolute;
+    z-index: -1;
+    top: 12%;
+    left: -15%;
+    width: 60vh;
+    height: 65vh;
+    background-color: #EFC81A;
+    border-radius: 10px;
+}
+
+
+/* Popular Recipes Style */
+.popular-recipe-image {
+    width: 100%;
+    height: 35vh;
+    background-color: gray;
+    border-radius: 10px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    padding: 20px;
+    max-width:100%;
+}
+
+.popular-recipe-title{
+    position: relative;
+    bottom: 5vh;
+    font-family: 'airbnbcereal';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 62px;
+    color: #3F3A3A;
+    border-left: 10px solid #EFC81A;
+    padding-left: 2%;
+}
+
+/* Footer Style */
+footer {
+    margin-top: 20vh;
+    height: 350px;
+    background-color: #efc81a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-copyright {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.hide-desktop {
+    display: none;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 750px) {
+    .hero img {
+        position:absolute;
+        right: 0;
+        top: 0;
+        height: 90vh;
+        width: 100vh;
+        z-index: -2;
+        max-width:100%;
+    }
+
+    .bg-yellow {
+        background-image: #efc81a;
+        z-index: -1 !important;
+        height: 90vh;
+        width: 100vh;
+        opacity: 0.8;
+    }
+
+    header .col-md-7 {
+        width: 100% !important;
+    }
+
+    .hero-left {
+        position: relative;
+        z-index: 1;
+        width: 80%;
+        bottom: 15vh;
+        left: 3vh;
+    }
+
+    .hero-text {
+        font-family: 'airbnbcereal';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 70px;
+        align-items: center;
+        color: #2E266F;
+    }
+
+    .hero-col .search-input {
+        width: 80% !important;
+    }
+
+    .new-recipe-box {
+        display: block;
+        visibility: hidden;
+    }
+
+}
+
+@media only screen and (max-width: 575px) {
+    .hide-desktop {
+        display: block;
+        visibility: visible;
+    }
+
+    .nav {
+        display: none;
+        visibility: hidden;
+    }
+
+    .nav-item {
+        margin: 0;
+    }
+
+    .main-section-recipe img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        max-width:100%;
+    }
+
+    #popular-recipe-image {
+        width: 100%;
+        max-width:100%;
+    }
+
+}

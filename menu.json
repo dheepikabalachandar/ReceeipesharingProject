@@ -1,0 +1,34 @@
+{
+    "menu": [
+      {
+        "title": "Chicken Kare",
+        "image": "chicken-kare.png",
+        "slug": "chicken-kare"
+      },
+      {
+        "title": "Bomb Chicken",
+        "image": "bomb-chicken.png",
+        "slug": "bomb-chicken"
+      },
+      {
+        "title": "Banana Smothie Pop",
+        "image": "banana-smothie-pop.png",
+        "slug": "banana-smothie-pop"
+      },
+      {
+        "title": "Coffe Lava Cake",
+        "image": "coffe-lava-cake.png",
+        "slug": "coffe-lava-cake"
+      },
+      {
+        "title": "Sugar Salmon",
+        "image": "sugar-salmon.png",
+        "slug": "sugar-salmon"
+      },
+      {
+        "title": "Indian Salad",
+        "image": "indian-salad.png",
+        "slug": "indian-salad"
+      }
+    ]
+  }
